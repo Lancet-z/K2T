@@ -13,7 +13,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 开始编译K2t固件
+name: 开始编译K2固件
 
 on:
   repository_dispatch:
@@ -25,7 +25,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
